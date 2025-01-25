@@ -16,3 +16,4 @@ $env:AZURE_OPENAI_API_KEY=  <Your key>
 
 #Invoke the app to run interactively the ChATbot using the right engine
 Streamlit run Chatbot.py 
+![AzureOpenAIAccount](https://github.com/user-attachments/assets/ae83bcf8-1483-4711-9fbb-aaab1b695321)
