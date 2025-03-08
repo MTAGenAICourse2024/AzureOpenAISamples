@@ -14,10 +14,11 @@ dotenv.load_dotenv()
 #    del os.environ["https_proxy"]
 
 
-endpoint = os.getenv("ENDPOINT_URL", "https://gilak-m7vuff9p-swedencentral.openai.azure.com/")
+endpoint = os.getenv("ENDPOINT_URL")
 deployment = os.getenv("DEPLOYMENT_NAME", "gpt-4-32k")
-subscription_key = os.getenv("AZURE_OPENAI_API_KEY", "C9NYG6dTbxV1HdWXj8VK71IeJVhhT3k2FC4Rta7udcBfiUKq69SnJQQJ99BCACfhMk5XJ3w3AAAAACOGwIub")
-api_version = os.getenv("AZURE_OPENAI_API_VERSION", "2024-05-01-preview")
+subscription_key = os.getenv("AZURE_OPENAI_API_KEY")
+#api_version = os.getenv("AZURE_OPENAI_API_VERSION", "2024-05-01-preview")
+api_version = os.getenv("AZURE_OPENAI_API_VERSION", "2025-01-01-preview")
 
 # Initialize Azure OpenAI Service client with key-based authentication
 client = AzureOpenAI(
@@ -33,24 +34,19 @@ print(f"Endpoint: {endpoint}, Deployment: {deployment}, Subscription Key: {subsc
 
 
 
-
 with st.sidebar:
     api_key = st.text_input(
         #include the client key in case the user wants to see it
         "ChAI Client SDK Secret Key", key={subscription_key}, value={subscription_key}, type="password"
     )
-    "[Get an OpenAI API key](https://platform.openai.com/account/api-keys)"
-
-    "[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/streamlit/llm-examples?quickstart=1)"
-
-
-
+    "[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/MTAGenAICourse2024/AzureOpenAISamples.git/)"
+ 
 # Initialize Azure OpenAI Service client with key-based authentication
 
 if not api_key:
     api_key = subscription_key
 
-st.title("Chat Q & A ")
+st.title("💬 Chat Q & A ")
 
 """
 In this example, we're using `StreamlitCallbackHandler` to display the thoughts and actions of an agent in an interactive Streamlit app.

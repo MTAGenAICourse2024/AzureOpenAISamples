@@ -25,7 +25,7 @@ deployment = os.getenv("DEPLOYMENT_NAME", "gpt-4o")
 
 subscription_key = os.getenv("ChAI_AZURE_OPENAI_API_KEY")
 azure_openai_api_key = subscription_key
-api_version = os.getenv("AZURE_OPENAI_API_VERSION", "2024-02-01")
+api_version = os.getenv("ChAI_AZURE_OPENAI_API_VERSION", "2024-02-01")
 model = os.getenv("AZURE_OPENAI_LLM_4", "gpt-4o")
 
 
@@ -36,7 +36,7 @@ llm = AzureChatOpenAI(**{'model_name': 'gpt-4o', 'temperature': 0.7, 'openai_api
 
 
 
-print(f"Deployment  : {deployment} API_version : {api_version} Endpoint : {endpoint} Key :{subscription_key} Model : {model} key : {azure_openai_api_key}")
+print(f"API_version : {api_version} Endpoint : {endpoint} Key :{subscription_key} Model : {model} key : {azure_openai_api_key}")
 
 
 
@@ -179,8 +179,8 @@ with st.sidebar:
 
         "Azure Open API  Secret Key", key={subscription_key}, value={subscription_key}, type="password"
     )
-   
-    "[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/intel-sandbox/wcs.connectAI.hackathon/tree/main/)"
+"[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/MTAGenAICourse2024/AzureOpenAISamples.git/)"
+ 
 
 
         
