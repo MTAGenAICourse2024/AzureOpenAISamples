@@ -148,6 +148,6 @@ or [PyCharm]
 
    See below an screenshot that illustrates from where to get the info on the subscription of your enpoint and Azure openai key 
    ![Image](https://github.com/user-attachments/assets/c478e5f8-4e8e-4304-8ff5-e7309a582274)
-3. If you download it directly from the Teams channel, make sure to rename to `.env`
+
 
 
