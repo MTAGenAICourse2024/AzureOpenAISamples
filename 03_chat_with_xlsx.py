@@ -96,10 +96,7 @@ with st.sidebar:
 
 
 
-
-
-
-st.title("🔎 ChAI - Q&A in xlsx ")
+st.title("🔎 Q&A in xlsx ")
 info_on_assistant = f"ℹ️ Assistant: {deployment}"
 f"""
  {info_on_assistant}
