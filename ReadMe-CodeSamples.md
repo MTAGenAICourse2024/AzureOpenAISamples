@@ -57,6 +57,7 @@ To run  in a Jupyter Notebook, you can use the following code snippet: [Jupyter]
 ```bash
 Streamlit run 01_chatbot.py
 ```
+![Image](https://github.com/user-attachments/assets/ff4607a0-30ed-4bc3-83cd-1853c9026075)
 
 ## II. Chat bot - textual / visual 
 
@@ -71,6 +72,7 @@ python .\02_image_analysis.py
 ```bash
 Streamlit run 02_chat_with_image_analysis.py
 ```
+![Image](https://github.com/user-attachments/assets/6e01a468-6eed-4c6e-b7f4-4886370c8191)
 
 ## III. Chat via xls (Read in Qs / Write As) 
 
@@ -80,6 +82,7 @@ Streamlit run 02_chat_with_image_analysis.py
 ```python
 Streamlit run 03_chat_with_xlsx.py
 ```
+![Image](https://github.com/user-attachments/assets/77e7352f-f1ac-48b8-977a-0bddc5acfff1)
 
 ## IV. Conversation-aware Bot
 
@@ -89,6 +92,7 @@ Streamlit run 03_chat_with_xlsx.py
 ```python
 Streamlit run 04_chat_conversation_aware.py
 ```
+![Image](https://github.com/user-attachments/assets/f7e0570a-3c34-4400-8380-4619b5606ced)
 
 ## V.  Chat with a doc (pdf) 
 **Purpose:** Ask questions on a specific pdf 
@@ -97,16 +101,17 @@ Streamlit run 04_chat_conversation_aware.py
 ```python
 Streamlit run 05_chat_with_pdf.py
 ```
+![Image](https://github.com/user-attachments/assets/c6a0fcc1-b582-4ca7-97ee-d538a86b96fb)
 
 ## VI. Agentic Flow (get answer from Web or General Knowledge):
 
-**Purpose:** Create a chatbot which leverages agentic flow (based on LangChain framework) and decides whether to use general knowledge or Web Search using the designated GPT model (.g., gpt-4-32k). The sample is  provided as a simple streamlit app
+**Purpose:** Create a chatbot which leverages agentic flow (based on LangChain framework) and decides whether to use general knowledge or Web Search using the designated GPT model (.g., gpt-4-32k). The sample is  provided as a simple streamlit app. Note that DuckDuckGo services are being used and the rate limit is very strict. 
 
 **Usage:**
 ```python
 Streamlit run 06_chat_with_web_search.py
 ```
-
+![Image](https://github.com/user-attachments/assets/269d1847-d2ba-432d-993f-fe956c6b8f2d)
 
 ## 7. Chat leveraging new knowledge (simple RAG)
 
@@ -116,6 +121,6 @@ Streamlit run 06_chat_with_web_search.py
 ```python
 Streamlit run 07_chat_via_RAG.py
 ```
-
+![Image](https://github.com/user-attachments/assets/cc05e6da-a4e6-456e-b0a7-8ab766b49f27)
 
 

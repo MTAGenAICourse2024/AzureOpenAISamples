@@ -45,7 +45,7 @@ if not api_key:
     api_key = subscription_key
 
 
-st.title("💬 Dialogue with AI assistant w/")
+st.title("💬 Dialogue with AI assistant ")
 info_on_assistant = f"ℹ️ Assistant: {deployment}   - In this version, the answers are aware of all the context of the conversation"
 f"""
  {info_on_assistant}
